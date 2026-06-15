@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#050816;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    backdrop-filter:blur(15px);
+}
+
+.logo{
+
+    color:#00ffff;
+    font-size:30px;
+    text-shadow:0 0 15px cyan;
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+
+    margin:0 15px;
+}
+
+nav ul li a{
+
+    text-decoration:none;
+    color:white;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+
+    color:#00ffff;
+}
+
+nav button{
+
+    padding:10px 20px;
+    border:none;
+    border-radius:30px;
+    background:#00ffff;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav button:hover{
+
+    box-shadow:0 0 20px cyan;
+}
+
+/* Hero Section */
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,#0d1b40,#050816 70%);
+}
+
+.content{
+
+    width:70%;
+}
+
+.content h1{
+
+    font-size:70px;
+    text-shadow:0 0 20px cyan;
+}
+
+.content p{
+
+    margin-top:20px;
+    font-size:20px;
+    color:#cccccc;
+}
+
+.buttons{
+
+    margin-top:40px;
+}
+
+.buttons a{
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    margin:10px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+}
+
+.btn1{
+
+    background:#00ffff;
+
+    color:black;
+}
+
+.btn1:hover{
+
+    box-shadow:0 0 30px cyan;
+}
+
+.btn2{
+
+    border:2px solid cyan;
+
+    color:white;
+}
+
+.btn2:hover{
+
+    background:cyan;
+
+    color:black;
+}
+
+/* Features */
+
+.features{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    padding:80px;
+}
+
+.card{
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.5s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px cyan;
+}
+
+.card h2{
+
+    margin-bottom:20px;
+}
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#999;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+}
+
+nav ul{
+
+    margin:20px 0;
+}
+
+.hero h1{
+
+    font-size:45px;
+}
+
+.content{
+
+    width:90%;
+}
+
+.features{
+
+    padding:40px;
+}
+
+}
